@@ -5,7 +5,10 @@
 }
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background: linear-gradient(90deg, #f3597e, #a1df28ed);
+   background-image: url("./images/nack.jpg");
+   background-attachment: fixed;
+   background-size: cover;
+   background-position: top;
 }
 #navbar h2 {
   text-transform: capitalize;
@@ -45,4 +48,61 @@ body {
 }a{
     text-decoration: none;
     display: inline-block;
+}
+/* start body content */
+#shop {
+  margin-top: 40px;
+  padding: 0 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill ,minmax(230px ,1fr));
+  gap: 12px;
+}
+#shop #item {
+  border: 1px solid #eee;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  overflow: hidden;
+}
+#shop #item img{
+  width: 100%;
+  margin-bottom: -3px;
+  filter: grayscale(.4);
+  transition: .3s;
+  cursor: pointer;
+}
+#shop #item img:hover{
+  filter: grayscale(0);
+  transform: scale(1.1) rotate(7deg);
+  
+}
+#shop #item .details {
+  color: #fff;
+  background: #037e75;
+  padding: 10px 4px;
+}
+#shop #item .details h2 {
+  text-transform: capitalize;
+  font-family: cursive;
+}
+#shop #item .details p {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+#shop #item .details .bottom {
+  background: #640b0b;
+  margin: -4px;
+  margin-bottom: -9px;
+  padding: 6px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#shop #item .details .bottom h3 span {
+  color: #d1d18a;
+  font-size: 20px;
+}
+#shop #item .details .bottom .buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
 }
