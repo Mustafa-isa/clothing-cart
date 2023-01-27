@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: linear-gradient(90deg, #f3597e, #a1df28ed);
+}
+#navbar h2 {
+  text-transform: capitalize;
+  font-family: cursive;
+  font-size: 30px;
+}
+#navbar .cart {
+  position: relative;
+  padding: 4px 10px;
+  background: #fff;
+  color: #088178;
+  border-radius: 6px;
+}
+#navbar i {
+    font-size: 25px;
+  cursor: pointer;
+
+}
+#navbar .cart #cart {
+  position: absolute;
+  color: #fff;
+  display: block;
+  padding: 4px;
+  background: red;
+  border-radius: 5px;
+  top: -13px;
+  font-size: 12px;
+  right: -10px;
+  cursor: pointer;
+}
+#navbar {
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}a{
+    text-decoration: none;
+    display: inline-block;
+}
