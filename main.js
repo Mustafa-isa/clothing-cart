@@ -39,6 +39,7 @@ shop.innerHTML=''
 
 for(let product =0 ; product< arr.length ;product++){
     shop.innerHTML+=`       <div class="item" id="item">
+    
     <img src=${arr[product].img} alt="">
     <div class="details">
         <h2>${arr[product].h2}</h2>
