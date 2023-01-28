@@ -63,7 +63,7 @@ body {
   overflow: hidden;
 }
 #shop #item img{
-  width: 100%;
+  width: 125%;
   margin-bottom: -3px;
   filter: grayscale(.4);
   transition: .3s;
