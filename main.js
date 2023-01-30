@@ -39,19 +39,29 @@ shop.innerHTML=''
 
 for(let product =0 ; product< arr.length ;product++){
     shop.innerHTML+=`       <div class="item" id="item">
-    
+    <div class="nn">
     <img src=${arr[product].img} alt="">
+    </div>
     <div class="details">
         <h2>${arr[product].h2}</h2>
         <p>${arr[product].pargraph}</p>
         <div class="bottom">
             <h3>${arr[product].price} <span><i class="fa-solid fa-dollar-sign"></i></span></h3>
             <div class="buttons">
-                <i class="fa-solid fa-minus"></i>
+                <i  onclick="decrement()"class="fa-solid fa-minus"></i>
                 <span id="${arr[product].id}">0</span>
-                <i class="fa-solid fa-plus"></i>
+                <i onclick="increment()" class="fa-solid fa-plus"></i>
             </div>
         </div>
     </div>
 </div>`
+}
+
+
+
+function increment(){
+  console.log("increment")
+}
+function decrement(){
+  console.log(" decrement")
 }
