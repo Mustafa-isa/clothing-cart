@@ -50,7 +50,7 @@ for(let product =0 ; product< arr.length ;product++){
             <div class="buttons">
                 <i  onclick="decrement()"class="fa-solid fa-minus"></i>
                 <span id="${arr[product].id}">0</span>
-                <i onclick="increment()" class="fa-solid fa-plus"></i>
+                <i onclick="increment(${arr[product].id})" class="fa-solid fa-plus"></i>
             </div>
         </div>
     </div>
@@ -58,10 +58,30 @@ for(let product =0 ; product< arr.length ;product++){
 }
 
 
+ let arrItem = []
+function increment(id){
+let search =arrItem.find((x) => x.id === id)
+if(search === undefined){
+  arrItem.push({
+    id:id,
+    item:1
+  })
+}else{
+  search.item +=1
 
-function increment(){
-  console.log("increment")
 }
-function decrement(){
-  console.log(" decrement")
+
+console.log(arrItem)
+
+}
+
+
+
+
+function decrement(id){
+  let search =arrItem.find((x) => x.id === id)
+console.log(search)
+
+  
+  console.log(arrItem)
 }
