@@ -29,7 +29,7 @@ cal();if(basket.length !== 0){
     shopping_cart.innerHTML =``
     label.innerHTML =`
      <h2>cart is empty</h2>
-     <button class ="empty">home</button>`
+     <a href ="index.html"> <button class ="empty">home</button></a>`
     
     }
 
