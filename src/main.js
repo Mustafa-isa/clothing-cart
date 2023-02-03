@@ -3,7 +3,7 @@ let cart =document.getElementById('cart')
 let numProduct =0
 // create array inside it obs
 
-let arrItem = JSON.parse(localStorage.getItem('data')) || []
+let arrItem = JSON.parse(localStorage.getItem("data")) || []
 
 
 let arr = [
@@ -76,7 +76,7 @@ if(search === undefined){
   search.item +=1
 
 }
-localStorage.setItem("data" ,JSON.stringify(arrItem))
+localStorage.setItem("data" , JSON.stringify(arrItem))
 update(id)
 
 }
@@ -86,6 +86,7 @@ update(id)
 
 function decrement(id){
   let search = arrItem.find((x) => x.id === id)
+  if(search === undefined) return
 if(search.item ===0) return 
 else search.item  -=1 
 update(id)
@@ -99,6 +100,7 @@ localStorage.setItem("data" ,JSON.stringify(arrItem))
   let el =document.getElementById(id)
   el.innerHTML=search.item
   calc()
+  localStorage.setItem("data" , JSON.stringify(arrItem))
 
  }
  function calc(){
@@ -107,3 +109,5 @@ localStorage.setItem("data" ,JSON.stringify(arrItem))
   })
   cart.innerHTML =numProduct
  }
+ calc()
+ localStorage.setItem("data" , JSON.stringify(arrItem))

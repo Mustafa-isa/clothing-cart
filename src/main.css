@@ -5,10 +5,7 @@
 }
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-   background-image: url("./images/nack.jpg");
-   background-attachment: fixed;
-   background-size: cover;
-   background-position: top;
+background: #4f3c3c;
 }
 #navbar h2 {
   text-transform: capitalize;
@@ -26,6 +23,10 @@ body {
     font-size: 25px;
   cursor: pointer;
 
+}
+a{
+  text-decoration: none;
+  color:rgb(221, 194, 194);
 }
 #navbar .cart #cart {
   position: absolute;
